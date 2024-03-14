@@ -1,0 +1,14 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.weather-display {
+  margin-top: 30px;
+  padding: 2rem;
+  box-shadow: 0 3px 15px 5px #eeeeee;
+}
+
+.weather-display h2 {
+  margin-top: 0;
+}
