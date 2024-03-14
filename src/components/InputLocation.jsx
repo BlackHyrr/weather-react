@@ -5,10 +5,7 @@ import LocationList from './LocationList';
 import './InputLocation.css';
 
 const InputLocation = () => {
-    const [value, setValue] = useState('');
-    const [locations, setLocations] = useState([]);
-    const {setLatitude, setLongitude} = useApiContext();
-    const {API_KEY} = useApiContext(); 
+    const {API_KEY, setLatitude, setLongitude, value, setValue, locations, setLocations} = useApiContext();
 
     const handleSearch = () => {
         setLatitude(null);

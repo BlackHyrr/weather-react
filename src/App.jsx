@@ -6,9 +6,7 @@ import { useApiContext } from './utils/apiContext';
 import getWindDirection from './utils/windDirection';
 
 function App() {
-    const {latitude, longitude} = useApiContext();
-    const [weatherData, setWeatherData] = useState(null);
-    const {API_KEY} = useApiContext();
+    const {API_KEY, latitude, longitude, weatherData, setWeatherData} = useApiContext();;
 
     useEffect(() => {
         if (latitude && longitude) {
@@ -25,7 +23,6 @@ function App() {
     return (
         <>
             <h1>Weather API</h1>
-            {console.log(weatherData)}
             <InputLocation />
             {weatherData && (
                 <div className='weather-display'>
